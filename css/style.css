@@ -1,0 +1,42 @@
+
+
+.margen{
+    position: relative;
+    right: -90px;
+}
+img.center {
+    display: block;
+    margin: 0 auto;
+}
+.pull-right{
+    position: relative;
+    right: 40px;
+
+}
+.banner{
+
+    height: 100%; width: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    right: -120px;
+
+
+}
+
+
+
+.move-logo{
+    position: relative;
+    animation-name: rotar;
+    animation-duration: 3s;
+    
+
+
+}
+@keyframes rotar {
+    from{transform: rotate(120deg)}
+    to{transform: rotate(360deg);}
+
+}
