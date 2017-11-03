@@ -13,7 +13,7 @@
   </head>
   <body >
   <div class="container row center">
-    <img class="img-fluid banner" src="imgs/banner.jpg">
+    <img class="img-fluid banner" src="/imgs/banner.jpg">
    <!-- <img class="img-fluid col-md-6" src="/imgs/banner2.jpg"> !-->
 
 </div>
@@ -28,7 +28,7 @@
 
 
     <a class="navbar-brand " href="index.html">
-        <img src="imgs/logo.png" class="move-logo">
+        <img src="/imgs/logo.png" class="move-logo">
 
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,13 +79,16 @@
 </nav>
 <br><br><br>
 <br><br><br><br><br>
-  <h1 class="text-center"> Carousel y Modal</h1>
-<ul class="text-center" align="center">
-    <li>creear div con clase carousel slide y atributo data-ride igual a carrousel</li>
-    <li>Crear un div para cada objeto que se mostrara en el carousel con clase carousel-item todo dentro de un contenedor con clase carousel-inner</li>
-    <li>Si se desa agregarle navegación se terndrá que crear una lista ordenada la cual llevará el orden de los elmentos del carouel con el orden en el que se muestra indicado por unnúmero entero todos los elementos de esta lista con un data-target igual a un identificador del contendeor con clase carousel-slider</li>
-</ul>
-
+  <div class="row">
+<div class="container" align="center">
+<h1 class="text-center"> Carousel y Modal</h1>
+<div class="container">
+<p>Primer paso...reear div con clase carousel slide y  un atributo data-ride igual a carrousel
+    Segundo paso.. Crear un div para cada objeto que se mostrara en el carousel con clase carousel-item todo dentro de un contenedor con clase carousel-inner y todo eso irá dentro del contenedor que creamos en el primer paso
+    Tercer paso Si se desa agregarle navegación se terndrá que crear una lista ordenada la cual llevará el orden de los elmentos del carouel con el orden en el que se muestra indicado por unnúmero entero todos los elementos de esta lista con un data-target igual a un identificador del contendeor con clase carousel-slider
+Listo!
+</p>
+</div>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -94,13 +97,13 @@
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img class="img-thumbnail" src="imgs/guapos.jpg" alt="First slide">
+            <img class="img-thumbnail" src="/imgs/guapos.jpg" alt="First slide">
         </div>
         <div class="carousel-item">
-            <img class="img-thumbnail" src="imgs/ceballos.jpg" alt="Second slide">
+            <img class="img-thumbnail" src="/imgs/ceballos.jpg" alt="Second slide">
         </div>
         <div class="carousel-item">
-            <img class="img-thumbnail" src="imgs/dani.jpg" alt="Third slide">
+            <img class="img-thumbnail" src="./imgs/dani.jpg" alt="Third slide">
         </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -113,7 +116,9 @@
 
     </a>
 </div>
-<br><br><br><br><br>
+</div>
+
+
 <div class="container" align="center">
 <h4 class="text-center">Modal</h4>
 <!-- Button trigger modal -->
@@ -124,25 +129,31 @@
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
-        <div class="modal-content" >
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal</h5>
+        <div class="modal-content">
+            Este es el contenedor modal-content
+            <div class="modal-header text-center" align="center">
+                <h5 class="modal-title text-center" id="exampleModalLabel">Esto es el encabezado con clase modal-header</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Bye">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <p> Crear un Modal es sencillo ocupas un contenedor con clase modal-fade agregar dentro otro contenedor con clase modal-header después ahí mismo crear escribir un encabezado con clase modal-title y escribir el titulo, despues añadir en el contendor de modal-content que tendrá dentro modal-header y moda-body y ahí poner nuestro contenido. Posteriormente crear botones para salir  y hacer alguna acción para salir se puede poner un atributo data-dismiss</p>
-
-            <img src="imgs/sexy.jpg" class="img-thumbnail">
+este es el contenedor con con clase modal-body
+                <br><br>
+                <p align="center" class="text-center"> Crear un Modal en bootstrap  es sencillo ocupas un div con clase modal-fade agregar dentro otro div con clase modal-header después ahí mismo  en el div con clase modal-header añadir  un encabezado de su gusto yo agregue un encabezado h4 para este ejemplo. Este encabezado tiene clase modal-title y escribir el título que deseemos, después añadir un contendor de modal-content que tendrá dentro este los dos divs el que tiene modal-header y otro con  modal-body y ahí poner nuestro contenido. Posteriormente crear botones para salir  y hacer alguna acción. El botoón  para salir  puede poner un atributo data-dismiss para al darle click se cierre nuestro Modal. Estos botones tienen que ser agregados a otro div dentro del div  con clase modal-body despues y el div que tendra los botones con clase modal-footer, que es el pie de nuestro modal.</p>
+<div class="container">
+            <img src="/imgs/sexy.jpg" class="img-thumbnail">
+</div>
             </div>
 
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Bye</button>
+                y aqui es el pie del modal con clase modal-footer <br>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                 <button type="button" class="btn btn-primary">Hacer una acción</button>
             </div>
         </div>
     </div>
+</div>
 </div>
 </div>
   <br><br><br><br>
