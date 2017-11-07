@@ -12,15 +12,9 @@
 
   </head>
   <body >
-  <div class="container row center">
-    <img class="img-fluid banner" src="imgs/banner.jpg">
-   <!-- <img class="img-fluid col-md-6" src="/imgs/banner2.jpg"> !-->
-
-</div>
-
-
+  <
   
-<nav class="navbar navbar-expand-md navbar-dark bg-secondary">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-fixed-top">
 
 
 
@@ -77,18 +71,35 @@
 
     </div>
 </nav>
-<br><br><br>
-<br><br><br><br><br>
+<br><br>
+
   <div class="row">
 <div class="container" align="center">
-<h1 class="text-center"> Carousel y Modal</h1>
-<div class="container">
-<p>Primer paso...reear div con clase carousel slide y  un atributo data-ride igual a carrousel
-    Segundo paso.. Crear un div para cada objeto que se mostrara en el carousel con clase carousel-item todo dentro de un contenedor con clase carousel-inner y todo eso irá dentro del contenedor que creamos en el primer paso
-    Tercer paso Si se desa agregarle navegación se terndrá que crear una lista ordenada la cual llevará el orden de los elmentos del carouel con el orden en el que se muestra indicado por unnúmero entero todos los elementos de esta lista con un data-target igual a un identificador del contendeor con clase carousel-slider
-Listo!
+<h1 class="text-center"> Carousel</h1>
+<div class="container row">
+<p class="col-md-4">
+    Carrousel Basíco: <br>
+    Aplique .carousel y .slide a un contenedor externo (con su propia ID).
+    Para los contenidos desplazables, ajuste todos los elementos en un .carousel-inner y otorgue a cada elemento una clase de elemento .carousel.
+    Además, debe aplicar .active a una de las diapositivas en el carrusel, de lo contrario, el carrusel no estará visible. Esta clase le permite establecer una diapositiva como la diapositiva inicial (es decir, la diapositiva de inicio).
 </p>
+
+    <p class="col-md-4">
+
+        Controles: <br>
+        Para agregar controles "Anterior / Siguiente", use un <a> con .carousel-control-prev o carrusel-control-next. También agregue un <span> con .carousel-control-prev-icon o .carousel-control-next-icon.
+
+Para atender a los lectores de pantalla, agregue <span> s con las palabras "Anterior" o "Siguiente" y asígneles la clase .sr-only. Esto ocultará este texto de los navegadores, pero leerá el texto en los lectores de pantalla.</span></span></a></p>
+
+    <img src="imgs/32.png" alt="" class="col-md-6">
+    <p class="col-md-4">
+        Indicadores <br> Para agregar controles "indicadores" (las pequeñas áreas clicables en la parte inferior, centro), agregue una lista con los indicadores .carousel, así como los atributos aplicables .data-target y .data-slide-to.</p>
+
+    <img src="imgs/pipi.png" alt="" class="col-md-10">
+
 </div>
+</div>
+
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -119,11 +130,33 @@ Listo!
 </div>
 
 
-<div class="container" align="center">
+<div class="container" align="center" align="center">
 <h4 class="text-center">Modal</h4>
+
+    <div class="row">
+        <p class="col-md-4">
+
+            El Modal es básicamente una ventana emergente que se mostrará al hacer clic en un elemento como botón o enlace de texto. Utiliza JavaScript para mostrar el contenido al hacer clic con efecto lightbox. El menú emergente modal se puede cerrar haciendo clic en el botón Cerrar o haciendo clic fuera de la ventana modal. Modal también se refiere con muchos otros nombres como popup, diálogo o alerta. Tenga en cuenta que esta alerta es una alert emergente diferente al componente de alert Bootstrap original.
+
+
+
+        </p>
+
+<p class="col-md-4">
+    Un modal en Bootstrap 4 contiene dos componentes: botón y ventana modal. A continuación se muestra el código del botón para un modal:</p>
+        <img src="imgs/nodal1.png" alt="" class="col-md-6">
+        <p class="col-md-4">
+            El atributo data-toggle = "modal" se usa para identificar el botón como un componente modal.
+            El siguiente es el data-target = "# Modal1" que es un ID debe ser único. Este mismo ID debe ser utilizado en el componente modal.
+            A continuación se muestra el código para el menú emergente modal:</p>
+        <br>
+        <img src="imgs/55.png" alt="" class="col-md-10">
+
+
+    </div>
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-    Picale!
+    Dale Click!
 </button>
 
 <!-- Modal -->
@@ -140,9 +173,8 @@ Listo!
             <div class="modal-body">
 este es el contenedor con con clase modal-body
                 <br><br>
-                <p align="center" class="text-center"> Crear un Modal en bootstrap  es sencillo ocupas un div con clase modal-fade agregar dentro otro div con clase modal-header después ahí mismo  en el div con clase modal-header añadir  un encabezado de su gusto yo agregue un encabezado h4 para este ejemplo. Este encabezado tiene clase modal-title y escribir el título que deseemos, después añadir un contendor de modal-content que tendrá dentro este los dos divs el que tiene modal-header y otro con  modal-body y ahí poner nuestro contenido. Posteriormente crear botones para salir  y hacer alguna acción. El botoón  para salir  puede poner un atributo data-dismiss para al darle click se cierre nuestro Modal. Estos botones tienen que ser agregados a otro div dentro del div  con clase modal-body despues y el div que tendra los botones con clase modal-footer, que es el pie de nuestro modal.</p>
-<div class="container">
-            <img src="imgs/sexy.jpg" class="img-thumbnail">
+                <p align="center" class="text-center"> cuerpo </p>
+            <img src="imgs/wow.jpg" class="img-thumbnail">
 </div>
             </div>
 
@@ -154,8 +186,8 @@ este es el contenedor con con clase modal-body
         </div>
     </div>
 </div>
-</div>
-</div>
+
+
   <br><br><br><br>
 
 <div class="jumbotron bg-secondary row" >
@@ -181,6 +213,8 @@ este es el contenedor con con clase modal-body
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+
   </body>
 </html>
 
